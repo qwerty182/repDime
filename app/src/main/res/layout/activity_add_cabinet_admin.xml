@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCabinetActivityAdmin">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:text="Добавление кабинета"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editCabinetNumberAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:hint="Номер кабинета"
+                android:inputType="textNoSuggestions"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageCabinetAdd"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="noPhoto"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Общая информация:"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/editGeneralInfo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:hint="Комментарий"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textTitleBuild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Здание:"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerBuild"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/build"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnSaveCab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Сохранить"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Производственная практика</string>
+
+    <string-array name="typeReport">
+        <item>Поломка</item>
+        <item>Забыли вещь</item>
+        <item>Кража</item>
+    </string-array>
+
+    <string-array name="build">
+        <item>Нахимовский проспект</item>
+        <item>Нежинская</item>
+    </string-array>
+</resources>

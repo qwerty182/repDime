@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportAddActivity">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:text="Отчет"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/imageReport"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="noPhoto"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Описание проблемы:"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/editComment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:hint="Комментарий"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textTitleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Тип отчета:"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTypeReport"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/typeReport"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Сохранить"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
